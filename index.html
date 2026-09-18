@@ -1,490 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>D3 Enterprises | Business Consulting</title>
-<meta name="description"content="D3 Enterprises provides business consulting, strategy, planning, innovation, and growth solutions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>D3 Enterprises | Business Consulting</title>
+
+    <meta
+        name="description"
+        content="D3 Enterprises provides business consulting, strategy, planning, innovation, and growth solutions."
+    >
+
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-  <body>
-    <!-- =========================
-     HEADER
-========================== -->
 
-<header>
-
-    <h1>D3 Enterprises</h1>
-
-    <p>Business Consulting &amp; Strategic Solutions</p>
-
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#services">Services</a> |
-        <a href="#industries">Industries</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-
-</header>
-
-
-<hr>
-
-
-<!-- =========================
-     HOME
-========================== -->
-
-<main>
-
-    <section id="home">
-
-        <h2>Build Better. Think Bigger. Grow Smarter.</h2>
-
-        <p>
-            D3 Enterprises helps businesses and organizations
-            solve challenges, discover opportunities, and build
-            strategies for sustainable growth.
-        </p>
-
-        <p>
-            From business planning to digital transformation,
-            we provide practical consulting designed around
-            your goals.
-        </p>
-
-        <p>
-            <a href="#contact">Start a Conversation</a>
-        </p>
-
-    </section>
-
-
-    <hr>
-
+<body class="bg-slate-50 text-slate-800">
 
     <!-- =========================
-         ABOUT
+         HEADER
     ========================== -->
 
-    <section id="about">
+    <header class="bg-slate-950 text-white shadow-lg">
+
+        <div class="mx-auto max-w-7xl px-6 py-6">
+
+            <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+
+                <div>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-cyan-400">
+                        D3 Enterprises
+                    </h1>
+
+                    <p class="mt-1 text-sm text-slate-300">
+                        Business Consulting &amp; Strategic Solutions
+                    </p>
+                </div>
+
+                <nav>
+                    <ul class="flex flex-wrap gap-4 text-sm font-medium">
+
+                        <li>
+                            <a
+                                href="#home"
+                                class="transition-colors hover:text-cyan-400"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#about"
+                                class="transition-colors hover:text-cyan-400"
+                            >
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#services"
+                                class="transition-colors hover:text-cyan-400"
+                            >
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#industries"
+                                class="transition-colors hover:text-cyan-400"
+                            >
+                                Industries
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#contact"
+                                class="transition-colors hover:text-cyan-400"
+                            >
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HOME / HERO
+        ========================== -->
+
+        <section
+            id="home"
+            class="bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-900 text-white"
+        >
+
+            <div
+                class="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center md:py-32"
+            >
+
+                <div>
+
+                    <span
+                        class="inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300"
+                    >
+                        Business Consulting
+                    </span>
+
+                    <h2
+                        class="mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+                    >
+                        Build Better.
+                        <span class="text-cyan-400">Think Bigger.</span>
+                        Grow Smarter.
+                    </h2>
+
+                    <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                        D3 Enterprises helps businesses and organizations
+                        solve challenges, discover opportunities, and build
+                        strategies for sustainable growth.
+                    </p>
+
+                    <p class="mt-4 max-w-2xl leading-7 text-slate-300">
+                        From business planning to digital transformation,
+                        we provide practical consulting designed around
+                        your goals.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+
+                        <a
+                            href="#contact"
+                            class="rounded-lg bg-cyan-400 px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-300"
+                        >
+                            Start a Conversation
+                        </a>
+
+                        <a
+                            href="#services"
+                            class="rounded-lg border border-white/30 px-6 py-3 text-center font-semibold transition hover:bg-white/10"
+                        >
+                            Explore Services
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hidden md:block">
+
+                    <div
+                        class="rounded-3xl border border-cyan-400/20 bg-white/10 p-8 shadow-2xl backdrop-blur"
+                    >
+
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div
+                                class="rounded-2xl bg-white/10 p-6"
+                            >
+                                <p class="text-3xl font-extrabold text-cyan-400">
+                                    Strategy
+                                </p>
+                                <p class="mt-2 text-sm text-slate-300">
+                                    Clear direction for your business.
+                                </p>
+                            </div>
+
+                            <div
+                                class="rounded-2xl bg-white/10 p-6"
+                            >
+                                <p class="text-3xl font-extrabold text-cyan-400">
+                                    Growth
+                                </p>
+                                <p class="mt-2 text-sm text-slate-300">
+                                    Opportunities built around your goals.
+                                </p>
+                            </div>
+
+                            <div
+                                class="rounded-2xl bg-white/10 p-6"
+                            >
+                                <p class="text-3xl font-extrabold text-cyan-400">
+                                    Innovation
+                                </p>
+                                <p class="mt-2 text-sm text-slate-300">
+                                    Practical ideas for changing markets.
+                                </p>
+                            </div>
+
+                            <div
+                                class="rounded-2xl bg-white/10 p-6"
+                            >
+                                <p class="text-3xl font-extrabold text-cyan-400">
+                                    Results
+                                </p>
+                                <p class="mt-2 text-sm text-slate-300">
+                                    Action that moves organizations forward.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-        <h2>About D3 Enterprises</h2>
+        <section id="about" class="bg-white">
 
-        <p>
-            D3 Enterprises is a business consulting company focused
-            on helping organizations make better decisions and
-            move confidently toward their goals.
-        </p>
+            <div class="mx-auto max-w-7xl px-6 py-20">
 
-        <p>
-            We believe successful businesses need more than ideas.
-            They need clear strategy, effective planning, practical
-            solutions, and consistent execution.
-        </p>
+                <div class="max-w-3xl">
 
-        <h3>Our Approach</h3>
+                    <span class="text-sm font-bold uppercase tracking-widest text-cyan-600">
+                        About Us
+                    </span>
 
-        <ol>
-            <li>Understand the business.</li>
-            <li>Identify the challenge.</li>
-            <li>Develop a practical strategy.</li>
-            <li>Put the strategy into action.</li>
-            <li>Measure progress and improve.</li>
-        </ol>
+                    <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+                        About D3 Enterprises
+                    </h2>
 
-        <h3>Our Mission</h3>
+                    <p class="mt-6 leading-8 text-slate-600">
+                        D3 Enterprises is a business consulting company focused
+                        on helping organizations make better decisions and
+                        move confidently toward their goals.
+                    </p>
 
-        <p>
-            To help businesses turn challenges into opportunities
-            and ideas into meaningful results.
-        </p>
+                    <p class="mt-4 leading-8 text-slate-600">
+                        We believe successful businesses need more than ideas.
+                        They need clear strategy, effective planning, practical
+                        solutions, and consistent execution.
+                    </p>
 
-    </section>
+                </div>
 
 
-    <hr>
+                <div class="mt-12 grid gap-8 md:grid-cols-2">
 
+                    <div class="rounded-2xl bg-slate-50 p-8 shadow-sm">
 
-    <!-- =========================
-         SERVICES
-    ========================== -->
+                        <h3 class="text-2xl font-bold text-slate-900">
+                            Our Approach
+                        </h3>
 
-    <section id="services">
+                        <ol class="mt-6 space-y-4">
 
-        <h2>Our Services</h2>
+                            <li class="flex gap-4">
+                                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-500 font-bold text-white">
+                                    1
+                                </span>
+                                <span>Understand the business.</span>
+                            </li>
 
-        <p>
-            D3 Enterprises provides consulting services across
-            several areas of business.
-        </p>
+                            <li class="flex gap-4">
+                                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-500 font-bold text-white">
+                                    2
+                                </span>
+                                <span>Identify the challenge.</span>
+                            </li>
 
+                            <li class="flex gap-4">
+                                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-500 font-bold text-white">
+                                    3
+                                </span>
+                                <span>Develop a practical strategy.</span>
+                            </li>
 
-        <article>
+                            <li class="flex gap-4">
+                                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-500 font-bold text-white">
+                                    4
+                                </span>
+                                <span>Put the strategy into action.</span>
+                            </li>
 
-            <h3>1. Business Strategy</h3>
+                            <li class="flex gap-4">
+                                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-500 font-bold text-white">
+                                    5
+                                </span>
+                                <span>Measure progress and improve.</span>
+                            </li>
 
-            <p>
-                Develop clear strategies that give your business
-                direction and help you achieve your long-term goals.
-            </p>
+                        </ol>
 
-        </article>
+                    </div>
 
 
-        <article>
+                    <div class="rounded-2xl bg-slate-950 p-8 text-white shadow-xl">
 
-            <h3>2. Management Consulting</h3>
+                        <h3 class="text-2xl font-bold">
+                            Our Mission
+                        </h3>
 
-            <p>
-                Identify business challenges, improve decision-making,
-                and strengthen organizational performance.
-            </p>
+                        <p class="mt-6 leading-8 text-slate-300">
+                            To help businesses turn challenges into opportunities
+                            and ideas into meaningful results.
+                        </p>
 
-        </article>
+                    </div>
 
+                </div>
 
-        <article>
+            </div>
 
-            <h3>3. Business Planning</h3>
+        </section>
 
-            <p>
-                Create practical business plans for new ventures,
-                existing companies, and future expansion.
-            </p>
 
-        </article>
+        <!-- =========================
+             SERVICES
+        ========================== -->
 
+        <section id="services" class="bg-slate-100">
 
-        <article>
+            <div class="mx-auto max-w-7xl px-6 py-20">
 
-            <h3>4. Digital Transformation</h3>
+                <div class="mx-auto max-w-3xl text-center">
 
-            <p>
-                Help organizations use technology and digital
-                processes to improve how they operate.
-            </p>
+                    <span class="text-sm font-bold uppercase tracking-widest text-cyan-600">
+                        What We Do
+                    </span>
 
-        </article>
+                    <h2 class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                        Our Services
+                    </h2>
 
+                    <p class="mt-5 leading-7 text-slate-600">
+                        D3 Enterprises provides consulting services across
+                        several areas of business.
+                    </p>
 
-        <article>
+                </div>
 
-            <h3>5. Marketing &amp; Brand Strategy</h3>
 
-            <p>
-                Develop stronger brand positioning, marketing
-                direction, and customer-focused strategies.
-            </p>
+                <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-        </article>
 
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-        <article>
+                        <span class="text-3xl">01</span>
 
-            <h3>6. Startup Consulting</h3>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Business Strategy
+                        </h3>
 
-            <p>
-                Help entrepreneurs turn promising ideas into
-                structured and actionable businesses.
-            </p>
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Develop clear strategies that give your business
+                            direction and help you achieve your long-term goals.
+                        </p>
 
-        </article>
+                    </article>
 
-    </section>
 
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-    <hr>
+                        <span class="text-3xl">02</span>
 
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Management Consulting
+                        </h3>
 
-    <!-- =========================
-         INDUSTRIES
-    ========================== -->
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Identify business challenges, improve decision-making,
+                            and strengthen organizational performance.
+                        </p>
 
-    <section id="industries">
+                    </article>
 
-        <h2>Industries We Serve</h2>
 
-        <p>
-            Our consulting approach can be adapted to different
-            industries and business environments.
-        </p>
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-        <ul>
-            <li>Technology</li>
-            <li>Healthcare</li>
-            <li>Finance</li>
-            <li>Education</li>
-            <li>Retail</li>
-            <li>Manufacturing</li>
-            <li>Real Estate</li>
-            <li>Professional Services</li>
-            <li>Entertainment</li>
-            <li>Non-Profit Organizations</li>
-        </ul>
+                        <span class="text-3xl">03</span>
 
-    </section>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Business Planning
+                        </h3>
 
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Create practical business plans for new ventures,
+                            existing companies, and future expansion.
+                        </p>
 
-    <hr>
+                    </article>
 
 
-    <!-- =========================
-         WHY D3
-    ========================== -->
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-    <section>
+                        <span class="text-3xl">04</span>
 
-        <h2>Why Choose D3 Enterprises?</h2>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Digital Transformation
+                        </h3>
 
-        <ul>
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Help organizations use technology and digital
+                            processes to improve how they operate.
+                        </p>
 
-            <li>
-                <strong>Practical Thinking:</strong>
-                We focus on solutions that can actually be implemented.
-            </li>
+                    </article>
 
-            <li>
-                <strong>Strategic Perspective:</strong>
-                We look beyond individual problems to understand the
-                bigger picture.
-            </li>
 
-            <li>
-                <strong>Flexible Approach:</strong>
-                Every organization has different needs.
-            </li>
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-            <li>
-                <strong>Growth Focus:</strong>
-                We help businesses identify opportunities for improvement
-                and expansion.
-            </li>
+                        <span class="text-3xl">05</span>
 
-            <li>
-                <strong>Client-Focused:</strong>
-                Your goals and challenges are at the center of our work.
-            </li>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Marketing &amp; Brand Strategy
+                        </h3>
 
-        </ul>
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Develop stronger brand positioning, marketing
+                            direction, and customer-focused strategies.
+                        </p>
 
-    </section>
+                    </article>
 
 
-    <hr>
+                    <article class="rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
+                        <span class="text-3xl">06</span>
 
-    <!-- =========================
-         PROCESS
-    ========================== -->
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">
+                            Startup Consulting
+                        </h3>
 
-    <section>
+                        <p class="mt-3 leading-7 text-slate-600">
+                            Help entrepreneurs turn promising ideas into
+                            structured and actionable businesses.
+                        </p>
 
-        <h2>How We Work</h2>
+                    </article>
 
-        <h3>Step 1 — Discover</h3>
+                </div>
 
-        <p>
-            We learn about your organization, goals, challenges,
-            customers, and market.
-        </p>
+            </div>
 
-        <h3>Step 2 — Analyze</h3>
+        </section>
 
-        <p>
-            We examine the situation and identify opportunities
-            and areas that need improvement.
-        </p>
 
-        <h3>Step 3 — Strategize</h3>
+        <!-- =========================
+             INDUSTRIES
+        ========================== -->
 
-        <p>
-            We develop recommendations and a practical plan of action.
-        </p>
+        <section id="industries" class="bg-white">
 
-        <h3>Step 4 — Execute</h3>
+            <div class="mx-auto max-w-7xl px-6 py-20">
 
-        <p>
-            We help turn the strategy into real-world action.
-        </p>
+                <div class="max-w-3xl">
 
-        <h3>Step 5 — Improve</h3>
+                    <span class="text-sm font-bold uppercase tracking-widest text-cyan-600">
+                        Our Reach
+                    </span>
 
-        <p>
-            We review progress and identify ways to continue improving.
-        </p>
+                    <h2 class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                        Industries We Serve
+                    </h2>
 
-    </section>
+                    <p class="mt-5 leading-8 text-slate-600">
+                        Our consulting approach can be adapted to different
+                        industries and business environments.
+                    </p>
 
+                </div>
 
-    <hr>
 
+                <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Technology
+                    </div>
 
-    <section id="contact">
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Healthcare
+                    </div>
 
-        <h2>Let's Talk</h2>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Finance
+                    </div>
 
-        <p>
-            Have a business challenge, idea, or growth opportunity?
-            Get in touch with D3 Enterprises.
-        </p>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Education
+                    </div>
 
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Retail
+                    </div>
 
-        <h3>Contact Information</h3>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Manufacturing
+                    </div>
 
-        <p>
-            Email:
-            <a href="mailto:hello@d3enterprises.com">
-                hello@d3enterprises.com
-            </a>
-        </p>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Real Estate
+                    </div>
 
-        <p>
-            Phone:
-            <a href="tel:+2340000000000">
-                +234 000 000 0000
-            </a>
-        </p>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Professional Services
+                    </div>
 
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Entertainment
+                    </div>
 
-        <h3>Send an Enquiry</h3>
+                    <div class="rounded-xl border border-slate-200 p-5 text-center font-semibold transition hover:border-cyan-400 hover:bg-cyan-50">
+                        Non-Profit Organizations
+                    </div>
 
-        <form>
+                </div>
 
-            <p>
-                <label for="name">Your Name:</label>
-                <br>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                >
-            </p>
+            </div>
 
+        </section>
 
-            <p>
-                <label for="email">Your Email:</label>
-                <br>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-            </p>
 
+        <!-- =========================
+             WHY D3
+        ========================== -->
 
-            <p>
-                <label for="company">Company:</label>
-                <br>
-                <input
-                    type="text"
-                    id="company"
-                    name="company"
-                >
-            </p>
+        <section class="bg-slate-950 text-white">
 
+            <div class="mx-auto max-w-7xl px-6 py-20">
 
-            <p>
-                <label for="service">
-                    What do you need help with?
-                </label>
-                <br>
+                <div class="max-w-3xl">
 
-                <select id="service" name="service">
-
-                    <option value="">
-                        Select a service
-                    </option>
-
-                    <option value="strategy">
-                        Business Strategy
-                    </option>
-
-                    <option value="management">
-                        Management Consulting
-                    </option>
-
-                    <option value="planning">
-                        Business Planning
-                    </option>
-
-                    <option value="digital">
-                        Digital Transformation
-                    </option>
-
-                    <option value="marketing">
-                        Marketing &amp; Brand Strategy
-                    </option>
-
-                    <option value="startup">
-                        Startup Consulting
-                    </option>
-
-                    <option value="other">
-                        Other
-                    </option>
-
-                </select>
-
-            </p>
-
-
-            <p>
-                <label for="message">Message:</label>
-                <br>
-
-                <textarea id="message" name="message" rows="8" cols="40" required></textarea>
-
-            </p>
-
-
-            <p>
-                <button type="submit">
-                    Send Enquiry
-                </button>
-            </p>
-
-        </form>
-
-    </section>
-
-</main>
-
-
-<hr>
-
-
-<!-- =========================
-     FOOTER
-========================== -->
-
-<footer>
-
-    <h2>D3 Enterprises</h2>
-
-    <p>
-        Business strategy, innovation, and practical solutions
-        for organizations ready to grow.
-    </p>
-
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#services">Services</a> |
-        <a href="#industries">Industries</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <p>
-        &copy; 2026 D3 Enterprises. All rights reserved.
-    </p>
-
-</footer>
-</body>
-</html>
+                    <span class="text-sm font-bold uppercase tracking-widest text-cyan-400">
+        
